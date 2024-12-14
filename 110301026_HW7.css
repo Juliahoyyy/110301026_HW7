@@ -1,0 +1,316 @@
+body {
+  background-color: #eeeed1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: auto; 
+  margin: 0;
+  padding: 20px;
+}
+
+html, body {
+  overflow-x: scroll; 
+  overflow-y: auto; 
+}
+
+.hidden {
+  display: none !important; 
+}
+
+h1.name{
+  display: inline;
+  margin-right: 7px;
+  margin-left: 100px;
+}
+
+input#nameInput{
+  display: inline;
+  font-size: 1rem;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+button#editButton{
+  font-size: 0.8em;
+  padding: 2.5px 7.5px;
+  cursor: pointer;
+  border: none;
+  background-color: #eeeed1;
+  color: #333;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+button#editButton:hover {
+  background-color: #FFED97;
+}
+
+.main-container{
+  width: 900px;
+  height: 1150px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0px;
+  display: flex;
+  gap: 0px;
+}
+
+.left-panel .right-panel{
+	height: 100%;
+}
+
+.left-panel{
+	width: 330px;
+	height: 100%;
+	background-color: #333;
+	color: white;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.photo-panel {
+  height: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  overflow: cover;
+
+  background-image: url('好看的畢業照.JPG');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+
+.name{
+  margin: 10px;
+  padding-top: 4px; 
+  font-size: 3em; 
+  color: white; 
+  text-align: center;
+  position: relative;
+}
+
+.text-content {
+  padding: 10px 30px;
+}
+
+
+.text-content h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.text-content img {
+  margin-top: 10px;
+  margin-bottom: 37px;
+  width: 250px;
+  align-self: center;
+}
+
+
+.right-panel {
+  width: 540px;
+  background-color: #f9f9f9;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  overflow-y: auto;
+
+}
+
+.right-panel > section {
+  margin-bottom: 100px; 
+  padding: 0; 
+}
+
+.right-panel h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+
+.education p, .hwlist p {
+  margin: 5px 0; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start
+}
+
+.education p {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; 
+  margin: 20px; 
+}
+
+.education .year {
+  font-weight: bold;
+  margin-right: 20px; 
+  width: 60px;
+  text-align: left; 
+}
+
+.education .content {
+  flex-grow: 1; 
+  text-align: left;
+}
+
+.hwlist p {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;  
+  margin: 20px; 
+}
+
+.hwlist .hw{
+  font-weight: bold;
+  margin-right: 20px; 
+  width: 60px;
+  text-align: left; 
+}
+
+a {
+  text-decoration: none;
+  color: blue; 
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover{
+	color: lightblue;
+}
+
+a:active{
+	color: lightgrey;
+}
+
+.favorite-music {
+  margin: 0px 0;
+}
+
+.music {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.music a {
+  text-decoration: none; 
+}
+
+.music img {
+  width: 70px; 
+  height: 70px; 
+  border-radius: 10px; 
+  object-fit: cover; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.music img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.music-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  max-width: 120px; 
+}
+
+.music-item p {
+  margin-top: 10px; 
+  font-size: 0.9em;
+  color: #333; 
+  text-align: center; 
+}
+
+button#addMusic{
+  font-size: 0.8em;
+  padding: 2.3px 7.3px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  background-color: #eeeed1;
+  color: #333;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+button#addMusic:hover {
+  background-color: #FFED97;
+}
+
+#addmusicForm {
+  background-color: #ffe4c4;
+  padding: 20px;
+  border: 1px solid #000;
+  width: 300px;
+  margin: 0 auto; 
+  border-radius: 0px;
+}
+
+#musicForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
+}
+
+#musicForm input {
+  width: 90%; 
+  padding: 4px;
+  font-size: 0.8em;
+}
+
+#musicForm button {
+  font-size: 0.8em;
+  padding: 2.3px 7.3px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  background-color: #eeeed1;
+  color: #333;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+#musicForm button:hover {
+  background-color: #FFED97;
+}
+
+
+.note {
+  margin-top: 20px; 
+  font-size: 0.8em; 
+  color: #7B7B7B; 
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
